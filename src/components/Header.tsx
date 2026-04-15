@@ -29,7 +29,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between h-24 md:h-28">
         <a href="#" className="hover:opacity-80 transition-opacity duration-300">
-          <img src={logoImg} alt="Dr. Ramon Regis" className="h-20 md:h-24 w-auto object-contain" />
+          <img src={logoImg} alt="Dr. Ramon Regis" className="h-16 sm:h-20 md:h-24 w-auto max-w-[70vw] sm:max-w-none object-contain" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

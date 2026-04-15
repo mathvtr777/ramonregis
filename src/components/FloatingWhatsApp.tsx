@@ -8,7 +8,7 @@ const FloatingWhatsApp = () => {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 animate-fade-in group flex items-center justify-center isolate"
+      className="fixed bottom-8 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 animate-fade-in group flex items-center justify-center isolate"
       aria-label="Fale conosco no WhatsApp"
     >
       <MessageCircle className="w-8 h-8 group-hover:scale-110 transition-transform duration-300 relative z-10" />

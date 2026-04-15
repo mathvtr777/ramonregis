@@ -35,7 +35,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="animate-fade-up animation-delay-200 font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-tight text-sand mb-6">
+          <h1 className="animate-fade-up animation-delay-200 font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1] tracking-tight text-sand mb-6">
             Eleve sua estética a um novo nível com{" "}
             <span className="text-gold italic">naturalidade</span>, precisão e excelência clínica.
           </h1>
