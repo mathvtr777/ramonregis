@@ -3,7 +3,7 @@ import projPromo2 from "@/assets/promo2.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ArrowRight } from "lucide-react";
 
-const WHATSAPP_URL = "https://wa.me/558498968160?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20promo%C3%A7%C3%B5es%20do%20m%C3%AAs.";
+const WHATSAPP_URL = "https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20promo%C3%A7%C3%B5es%20do%20m%C3%AAs.";
 
 const PromotionsSection = () => {
   const section = useScrollReveal();
