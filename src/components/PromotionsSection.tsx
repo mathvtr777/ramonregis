@@ -1,4 +1,4 @@
-import projPromo1 from "@/assets/promo1.jpeg";
+import projPromo1 from "@/assets/promoc.jpeg";
 import projPromo2 from "@/assets/promo2.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ArrowRight } from "lucide-react";
