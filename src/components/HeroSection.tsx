@@ -44,12 +44,12 @@ const HeroSection = () => {
             Mais de 10 anos de experiência e reconhecimento em estética avançada, com destaque em rinomodelação, harmonização facial e rejuvenescimento de alto padrão.
           </p>
 
-          <div className="animate-fade-up animation-delay-600 flex flex-col sm:flex-row gap-4 mb-16">
+          <div className="animate-fade-up animation-delay-600 flex flex-col sm:flex-row gap-4 mb-16 w-full">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-shine inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 hover:-translate-y-0.5"
+              className="cta-shine w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-6 sm:px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 hover:-translate-y-0.5"
             >
               Agendar avaliação personalizada
             </a>
@@ -57,17 +57,17 @@ const HeroSection = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-sand/30 hover:border-gold text-sand font-body font-medium text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 hover:-translate-y-0.5"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-sand/30 hover:border-gold text-sand font-body font-medium text-sm tracking-wider uppercase px-6 sm:px-8 py-4 rounded-sm transition-all duration-300 hover:-translate-y-0.5"
             >
               Falar no WhatsApp
             </a>
           </div>
 
-          <div className="animate-fade-up animation-delay-800 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-sand/10 pt-10">
+          <div className="animate-fade-up animation-delay-800 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 border-t border-sand/10 pt-10">
             {stats.map((stat, i) => (
               <div key={stat.label} className="animate-fade-up" style={{ animationDelay: `${1 + i * 0.15}s` }}>
-                <p className="font-heading text-3xl md:text-4xl text-gold mb-1">{stat.value}</p>
-                <p className="font-body text-xs md:text-sm text-sand/60 uppercase tracking-wider">{stat.label}</p>
+                <p className="font-heading text-2xl sm:text-3xl md:text-4xl text-gold mb-1">{stat.value}</p>
+                <p className="font-body text-[10px] sm:text-xs md:text-sm text-sand/60 uppercase tracking-wider break-words">{stat.label}</p>
               </div>
             ))}
           </div>
