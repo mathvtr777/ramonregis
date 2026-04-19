@@ -1,5 +1,6 @@
 import projPromo1 from "@/assets/promoc.jpeg";
 import projPromo2 from "@/assets/promo2.jpeg";
+import projPromo3 from "@/assets/intimo.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ArrowRight } from "lucide-react";
 
@@ -25,7 +26,7 @@ const PromotionsSection = () => {
             Não perca essa oportunidade única de elevar a sua estética com nossas condições especiais por tempo limitado.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-16">
             <div className="relative group rounded-lg overflow-hidden border border-sand/10 hover:border-gold/50 shadow-2xl hover:shadow-gold/10 transition-all duration-500 bg-black/40">
               <div className="aspect-[4/5] bg-background-dark overflow-hidden flex items-center justify-center p-2">
                 <img 
@@ -41,6 +42,16 @@ const PromotionsSection = () => {
                 <img 
                   src={projPromo2} 
                   alt="Promoção Especial 2" 
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-xl rounded-sm"
+                />
+              </div>
+            </div>
+
+            <div className="relative group rounded-lg overflow-hidden border border-sand/10 hover:border-gold/50 shadow-2xl hover:shadow-gold/10 transition-all duration-500 bg-black/40">
+              <div className="aspect-[4/5] bg-background-dark overflow-hidden flex items-center justify-center p-2">
+                <img 
+                  src={projPromo3} 
+                  alt="Promoção Especial 3" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-xl rounded-sm"
                 />
               </div>
