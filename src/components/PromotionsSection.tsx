@@ -118,36 +118,6 @@ const PromotionsSection = () => {
               </div>
             ))}
           </div>
-
-          {/* Portugal Banner */}
-          <div className="bg-[#1A1A1A]/80 border border-gold/30 rounded-sm p-8 sm:p-10 mt-4 relative overflow-hidden group shadow-lg text-center max-w-4xl mx-auto">
-             <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 blur-[80px] rounded-full group-hover:bg-gold/20 transition-colors duration-700" />
-             <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 blur-[80px] rounded-full group-hover:bg-gold/20 transition-colors duration-700" />
-             
-             <div className="relative z-10 flex flex-col items-center">
-               <div className="w-12 h-12 bg-graphite rounded-full flex items-center justify-center mb-6 border border-gold/20">
-                 <MapPin className="w-5 h-5 text-gold" />
-               </div>
-               <h3 className="font-heading text-3xl text-sand mb-4">
-                 Portugal <span className="text-gold italic text-xl sm:text-2xl block sm:inline sm:ml-2">(Atendimentos a partir de julho)</span>
-               </h3>
-               <p className="font-body text-sand/80 text-lg mb-2 max-w-2xl mx-auto leading-relaxed">
-                 Marque sua avaliação on-line para Portugal.
-               </p>
-               <p className="font-body text-gold font-medium text-lg mb-8 tracking-wide">
-                 Agendamos para avaliação on-line para Portugal: 30 euros
-               </p>
-               
-               <a
-                 href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20minha%20avalia%C3%A7%C3%A3o%20on-line%20para%20Portugal."
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="inline-flex items-center justify-center gap-2 bg-transparent border border-gold text-gold hover:bg-gold hover:text-graphite font-body font-semibold text-xs sm:text-sm tracking-wider uppercase px-6 py-3 sm:px-8 sm:py-4 rounded-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
-               >
-                 Agendar Avaliação On-line <ArrowRight className="w-4 h-4" />
-               </a>
-             </div>
-          </div>
         </div>
       </div>
       
