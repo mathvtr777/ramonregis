@@ -1,6 +1,7 @@
 import localImg from "@/assets/local.jpeg";
+import theImg from "@/assets/the.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin, ExternalLink, Calendar } from "lucide-react";
 
 const MAPS_URL = "https://maps.app.goo.gl/CLnJjaiBWQXF1cyP8?g_st=iw";
 
@@ -20,27 +21,70 @@ const AttendanceLocationSection = () => {
           }`}
         >
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 mb-6 border border-gold/30 rounded-full px-4 py-1.5 bg-black/20">
               <MapPin className="w-4 h-4 text-gold" />
               <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">
-                Local de Atendimento
+                Locais de Atendimento
               </span>
             </div>
 
             <h2 className="font-heading text-3xl md:text-5xl text-sand mb-4 leading-tight">
-              Atendimento <span className="text-gold italic">Setor Marista</span>
+              Atendimentos em <span className="text-gold italic">Goiânia</span>
             </h2>
 
             <p className="font-body text-sand/70 max-w-2xl mx-auto text-lg leading-relaxed">
-              Estamos localizados em uma das regiões mais nobres de Goiânia, com fácil acesso e estacionamento.
+              Estamos localizados em algumas das regiões mais nobres de Goiânia, com fácil acesso e infraestrutura completa para o seu conforto.
             </p>
           </div>
 
-          {/* Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Location 1: The Prime Tamandaré */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-20">
             {/* Image */}
             <div className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/40 shadow-2xl hover:shadow-gold/10 transition-all duration-500">
+              <img
+                src={theImg}
+                alt="Local de Atendimento - The Prime Tamandaré Office"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+            </div>
+
+            {/* Info card */}
+            <div className="flex flex-col gap-6">
+              <div className="bg-black/30 border border-sand/10 rounded-xl p-8 backdrop-blur-sm">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-gold" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-xl text-sand mb-1">The Prime Tamandaré Office</h3>
+                    <p className="font-body text-sand/60 text-sm">Setor Oeste, Goiânia – GO</p>
+                  </div>
+                </div>
+
+                <div className="h-px bg-sand/10 mb-6" />
+
+                <p className="font-body text-sand/70 text-base leading-relaxed mb-8">
+                  Rua 5, nº 691 - St. Oeste, Goiânia - GO, 74115-060
+                </p>
+
+                <a
+                  href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20The%20Prime%20Tamandar%C3%A9."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"
+                >
+                  Agendar Consulta <Calendar className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Location 2: Setor Marista */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Image */}
+            <div className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/40 shadow-2xl hover:shadow-gold/10 transition-all duration-500 lg:order-2">
               <img
                 src={localImg}
                 alt="Local de Atendimento - Setor Marista"
@@ -51,7 +95,7 @@ const AttendanceLocationSection = () => {
             </div>
 
             {/* Info card */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 lg:order-1">
               <div className="bg-black/30 border border-sand/10 rounded-xl p-8 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 rounded-full bg-gold/15 border border-gold/30 flex items-center justify-center flex-shrink-0">
@@ -73,7 +117,7 @@ const AttendanceLocationSection = () => {
                   href={MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"
+                  className="inline-flex items-center justify-center gap-3 bg-transparent border border-gold text-gold hover:bg-gold hover:text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"
                 >
                   Ver no Google Maps <ExternalLink className="w-4 h-4" />
                 </a>
