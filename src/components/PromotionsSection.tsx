@@ -132,19 +132,19 @@ const PromotionsSection = () => {
                  Portugal <span className="text-gold italic text-xl sm:text-2xl block sm:inline sm:ml-2">(Atendimentos a partir de julho)</span>
                </h3>
                <p className="font-body text-sand/80 text-lg mb-2 max-w-2xl mx-auto leading-relaxed">
-                 Marque sua avaliação on-line e lista de espera para Portugal.
+                 Marque sua avaliação on-line para Portugal.
                </p>
                <p className="font-body text-gold font-medium text-lg mb-8 tracking-wide">
                  Agendamos para avaliação on-line para Portugal: 30 euros
                </p>
                
                <a
-                 href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20minha%20avalia%C3%A7%C3%A3o%20on-line%20para%20Portugal%20e%20entrar%20na%20lista%20de%20espera."
+                 href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20minha%20avalia%C3%A7%C3%A3o%20on-line%20para%20Portugal."
                  target="_blank"
                  rel="noopener noreferrer"
                  className="inline-flex items-center justify-center gap-2 bg-transparent border border-gold text-gold hover:bg-gold hover:text-graphite font-body font-semibold text-xs sm:text-sm tracking-wider uppercase px-6 py-3 sm:px-8 sm:py-4 rounded-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
                >
-                 Avaliação On-line e Lista de Espera <ArrowRight className="w-4 h-4" />
+                 Agendar Avaliação On-line <ArrowRight className="w-4 h-4" />
                </a>
              </div>
           </div>
