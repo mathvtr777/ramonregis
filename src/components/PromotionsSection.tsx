@@ -34,8 +34,8 @@ const promotionsData: PromotionOffer[] = [
   {
     id: "promo-4",
     title: "Preenchimento de Glúteos",
-    price: 3000.00,
-    installmentsText: "Consulte condições",
+    price: 10000.00,
+    installmentsText: "10x sem juros no cartão",
     image: projPromo4,
   }
 ];
