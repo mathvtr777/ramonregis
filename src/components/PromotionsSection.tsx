@@ -2,8 +2,9 @@ import { useState } from "react";
 import projPromo1 from "@/assets/promoc.jpeg";
 import projPromo2 from "@/assets/promo2.jpeg";
 import projPromo3 from "@/assets/intimo.jpeg";
+import projPromo4 from "@/assets/gluteo.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Sparkles, ShoppingBag } from "lucide-react";
+import { Sparkles, ShoppingBag, MapPin, ArrowRight } from "lucide-react";
 import { CheckoutModal, PromotionOffer } from "./CheckoutModal";
 
 const promotionsData: PromotionOffer[] = [
@@ -29,6 +30,13 @@ const promotionsData: PromotionOffer[] = [
     price: 3000.00,
     installmentsText: "10x sem juros",
     image: projPromo3,
+  },
+  {
+    id: "promo-4",
+    title: "Preenchimento de Glúteos",
+    price: 3000.00,
+    installmentsText: "Consulte condições",
+    image: projPromo4,
   }
 ];
 
@@ -59,7 +67,7 @@ const PromotionsSection = () => {
             Não perca essa oportunidade única de elevar a sua estética com nossas condições especiais por tempo limitado. Adquira agora mesmo de forma online e 100% segura.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
             {promotionsData.map((promo) => (
               <div key={promo.id} className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/50 shadow-2xl hover:shadow-gold/10 transition-all duration-500 bg-black/40 flex flex-col h-full relative z-20">
                 <div className="aspect-[4/5] bg-black overflow-hidden flex items-center justify-center p-0 relative">
@@ -109,6 +117,36 @@ const PromotionsSection = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Portugal Banner */}
+          <div className="bg-[#1A1A1A]/80 border border-gold/30 rounded-sm p-8 sm:p-10 mt-4 relative overflow-hidden group shadow-lg text-center max-w-4xl mx-auto">
+             <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 blur-[80px] rounded-full group-hover:bg-gold/20 transition-colors duration-700" />
+             <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 blur-[80px] rounded-full group-hover:bg-gold/20 transition-colors duration-700" />
+             
+             <div className="relative z-10 flex flex-col items-center">
+               <div className="w-12 h-12 bg-graphite rounded-full flex items-center justify-center mb-6 border border-gold/20">
+                 <MapPin className="w-5 h-5 text-gold" />
+               </div>
+               <h3 className="font-heading text-3xl text-sand mb-4">
+                 Portugal <span className="text-gold italic text-xl sm:text-2xl block sm:inline sm:ml-2">(Atendimentos a partir de julho)</span>
+               </h3>
+               <p className="font-body text-sand/80 text-lg mb-2 max-w-2xl mx-auto leading-relaxed">
+                 Marque sua avaliação on-line e lista de espera para Portugal.
+               </p>
+               <p className="font-body text-gold font-medium text-lg mb-8 tracking-wide">
+                 Agendamos para avaliação on-line para Portugal: 30 euros
+               </p>
+               
+               <a
+                 href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20minha%20avalia%C3%A7%C3%A3o%20on-line%20para%20Portugal%20e%20entrar%20na%20lista%20de%20espera."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="inline-flex items-center justify-center gap-2 bg-transparent border border-gold text-gold hover:bg-gold hover:text-graphite font-body font-semibold text-xs sm:text-sm tracking-wider uppercase px-6 py-3 sm:px-8 sm:py-4 rounded-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
+               >
+                 Avaliação On-line e Lista de Espera <ArrowRight className="w-4 h-4" />
+               </a>
+             </div>
           </div>
         </div>
       </div>
