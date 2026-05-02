@@ -1,4 +1,5 @@
 import { useState } from "react";
+import novaImg from "@/assets/nova.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ShoppingBag, MapPin, ArrowRight } from "lucide-react";
 import { CheckoutModal, PromotionOffer } from "./CheckoutModal";
@@ -55,9 +56,17 @@ const PromotionsSection = () => {
             Promoções do <span className="text-gold italic">Mês</span>
           </h2>
           
-          <p className="font-body text-sand/70 mb-16 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="font-body text-sand/70 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
             Não perca essa oportunidade única de elevar a sua estética com nossas condições especiais por tempo limitado. Adquira agora mesmo de forma online e 100% segura.
           </p>
+
+          <div className="mb-16 flex justify-center">
+            <img 
+              src={novaImg} 
+              alt="Promoções em destaque" 
+              className="max-w-full md:max-w-3xl rounded-xl shadow-2xl border border-gold/30 object-cover" 
+            />
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
             {promotionsData.map((promo) => (
