@@ -1,47 +1,10 @@
 import { useState } from "react";
 import novaImg from "@/assets/nova.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Sparkles, ShoppingBag, MapPin, ArrowRight } from "lucide-react";
-import { CheckoutModal, PromotionOffer } from "./CheckoutModal";
-
-const promotionsData: PromotionOffer[] = [
-  {
-    id: "promo-1",
-    title: "Toxina Botulínica (Dysport 50 Und)",
-    price: 588.00,
-    cashPrice: 500.00,
-    installmentsText: "10x de R$ 58,80",
-  },
-  {
-    id: "promo-2",
-    title: "Rejuvenescimento Facial (40% OFF)",
-    price: 720.00,
-    cashPriceText: "ou R$ 550,00 a ml",
-    installmentsText: "10x de R$ 72,00",
-  },
-  {
-    id: "promo-3",
-    title: "Preenchimento Íntimo",
-    price: 3000.00,
-    installmentsText: "10x sem juros",
-  },
-  {
-    id: "promo-4",
-    title: "Preenchimento de Glúteos",
-    price: 10000.00,
-    installmentsText: "10x sem juros no cartão",
-  }
-];
+import { Sparkles } from "lucide-react";
 
 const PromotionsSection = () => {
   const section = useScrollReveal();
-  const [selectedOffer, setSelectedOffer] = useState<PromotionOffer | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleBuyClick = (offer: PromotionOffer) => {
-    setSelectedOffer(offer);
-    setIsModalOpen(true);
-  };
 
   return (
     <section className="py-20 lg:py-28 bg-graphite relative overflow-hidden border-y border-sand/10">
@@ -60,66 +23,15 @@ const PromotionsSection = () => {
             Não perca essa oportunidade única de elevar a sua estética com nossas condições especiais por tempo limitado. Adquira agora mesmo de forma online e 100% segura.
           </p>
 
-          <div className="mb-16 flex justify-center">
+          <div className="mb-8 flex justify-center">
             <img 
               src={novaImg} 
               alt="Promoções em destaque" 
               className="max-w-full md:max-w-3xl rounded-xl shadow-2xl border border-gold/30 object-cover" 
             />
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
-            {promotionsData.map((promo) => (
-              <div key={promo.id} className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/50 shadow-2xl hover:shadow-gold/10 transition-all duration-500 bg-black/40 flex flex-col h-full relative z-20">
-                
-                <div className="p-6 flex flex-col flex-grow text-left relative z-20 bg-gradient-to-t from-black via-black/95 to-black/90">
-                  <div className="mb-4 flex-grow">
-                    <h3 className="text-xl font-heading text-sand mb-2 leading-tight">{promo.title}</h3>
-                    <div className="flex flex-col gap-0.5 mt-3">
-                      {promo.installmentsText && (
-                        <span className="text-xs text-sand/60 uppercase tracking-wider font-semibold">
-                          {promo.installmentsText}
-                        </span>
-                      )}
-                      <div className="flex items-baseline gap-2">
-                        {!promo.installmentsText && (
-                          <span className="text-xs text-sand/50 uppercase tracking-wider font-semibold">Por apenas</span>
-                        )}
-                        <span className="text-2xl font-bold text-gold">
-                          R$ {promo.price.toFixed(2).replace('.', ',')}
-                        </span>
-                      </div>
-                      {promo.cashPriceText ? (
-                        <span className="text-xs text-sand/70 mt-1">
-                          <span className="font-semibold text-gold">{promo.cashPriceText}</span>
-                        </span>
-                      ) : promo.cashPrice ? (
-                        <span className="text-xs text-sand/70 mt-1">
-                          ou <span className="font-semibold text-gold">R$ {promo.cashPrice.toFixed(2).replace('.', ',')}</span> à vista
-                        </span>
-                      ) : null}
-                    </div>
-                  </div>
-                  
-                  <button
-                    onClick={() => handleBuyClick(promo)}
-                    className="w-full mt-auto inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wide uppercase px-6 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1"
-                  >
-                    Comprar Agora <ShoppingBag className="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
-      
-      {/* Checkout Modal */}
-      <CheckoutModal 
-        isOpen={isModalOpen} 
-        onOpenChange={setIsModalOpen} 
-        offer={selectedOffer} 
-      />
       
       {/* Decorative gradient */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-gold/5 blur-[150px] -z-10 rounded-full pointer-events-none" />
