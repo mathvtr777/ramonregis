@@ -19,7 +19,7 @@ export interface PromotionOffer {
   cashPrice?: number;
   cashPriceText?: string;
   installmentsText?: string;
-  image: string;
+  image?: string;
 }
 
 interface CheckoutModalProps {
@@ -59,11 +59,13 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
         </DialogHeader>
 
         <div className="flex items-center gap-4 py-4 mb-2 border-b border-sand/5">
-          <img 
-            src={offer.image} 
-            alt={offer.title} 
-            className="w-16 h-16 object-cover rounded-md border border-gold/30 bg-black/50" 
-          />
+          {offer.image && (
+            <img 
+              src={offer.image} 
+              alt={offer.title} 
+              className="w-16 h-16 object-cover rounded-md border border-gold/30 bg-black/50" 
+            />
+          )}
           <div>
             <h4 className="font-semibold text-sand line-clamp-1">{offer.title}</h4>
             <div className="flex flex-col gap-0.5 mt-1">

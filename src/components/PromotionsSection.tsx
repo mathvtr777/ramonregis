@@ -1,8 +1,4 @@
 import { useState } from "react";
-import projPromo1 from "@/assets/promoc.jpeg";
-import projPromo2 from "@/assets/promo2.jpeg";
-import projPromo3 from "@/assets/intimo.jpeg";
-import projPromo4 from "@/assets/gluteo.jpeg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Sparkles, ShoppingBag, MapPin, ArrowRight } from "lucide-react";
 import { CheckoutModal, PromotionOffer } from "./CheckoutModal";
@@ -14,7 +10,6 @@ const promotionsData: PromotionOffer[] = [
     price: 588.00,
     cashPrice: 500.00,
     installmentsText: "10x de R$ 58,80",
-    image: projPromo1,
   },
   {
     id: "promo-2",
@@ -22,21 +17,18 @@ const promotionsData: PromotionOffer[] = [
     price: 720.00,
     cashPriceText: "ou R$ 550,00 a ml",
     installmentsText: "10x de R$ 72,00",
-    image: projPromo2,
   },
   {
     id: "promo-3",
     title: "Preenchimento Íntimo",
     price: 3000.00,
     installmentsText: "10x sem juros",
-    image: projPromo3,
   },
   {
     id: "promo-4",
     title: "Preenchimento de Glúteos",
     price: 10000.00,
     installmentsText: "10x sem juros no cartão",
-    image: projPromo4,
   }
 ];
 
@@ -70,14 +62,6 @@ const PromotionsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
             {promotionsData.map((promo) => (
               <div key={promo.id} className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/50 shadow-2xl hover:shadow-gold/10 transition-all duration-500 bg-black/40 flex flex-col h-full relative z-20">
-                <div className="aspect-[4/5] bg-black overflow-hidden flex items-center justify-center p-0 relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/0 to-transparent z-10" />
-                  <img 
-                    src={promo.image} 
-                    alt={promo.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
-                  />
-                </div>
                 
                 <div className="p-6 flex flex-col flex-grow text-left relative z-20 bg-gradient-to-t from-black via-black/95 to-black/90">
                   <div className="mb-4 flex-grow">
