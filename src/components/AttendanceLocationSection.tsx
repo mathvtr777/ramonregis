@@ -70,7 +70,7 @@ const AttendanceLocationSection = () => {
                 </p>
 
                 <a
-                  href="https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20The%20Prime%20Tamandar%C3%A9."
+                  href="https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20The%20Prime%20Tamandar%C3%A9."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"

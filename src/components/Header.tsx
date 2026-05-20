@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logoImg from "../assets/logo.png";
 
-const WHATSAPP_URL = "https://wa.me/5562996343740?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
 
 const navLinks = [
   { label: "Procedimentos", href: "#procedimentos" },
