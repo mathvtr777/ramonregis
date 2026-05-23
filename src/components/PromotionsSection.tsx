@@ -10,15 +10,15 @@ const PromotionsSection = () => {
         <div ref={section.ref} className={`max-w-6xl mx-auto text-center transform transition-all duration-1000 ${section.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="inline-flex items-center gap-2 mb-6 border border-gold/30 rounded-full px-4 py-1.5 bg-black/20">
             <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">Oportunidad Exclusiva</span>
+            <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">Oportunidade Exclusiva</span>
           </div>
           
           <h2 className="font-heading text-3xl md:text-5xl text-sand mb-4 leading-tight">
-            Promociones del <span className="text-gold italic">Mes</span>
+            Promoções do <span className="text-gold italic">Mês</span>
           </h2>
           
           <p className="font-body text-sand/70 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
-            No pierda esta oportunidad única de elevar su estética con nuestras condiciones especiales por tiempo limitado. Adquiera ahora mismo de forma online y 100% segura.
+            Não perca essa oportunidade única de elevar a sua estética com nossas condições especiais por tempo limitado. Adquira agora mesmo de forma online e 100% segura.
           </p>
         </div>
       </div>
