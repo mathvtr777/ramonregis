@@ -14,7 +14,7 @@ const PromotionsSection = () => {
           </div>
           
           <h2 className="font-heading text-3xl md:text-5xl text-sand mb-4 leading-tight">
-            Promoções do <span className="text-gold italic">Mês</span>
+            Promoção <span className="text-gold italic">Junina</span>
           </h2>
           
           <p className="font-body text-sand/70 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
