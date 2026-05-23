@@ -34,12 +34,12 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
   const handleCheckout = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simula uma chamada à API e a futura integração do Mercado Pago
+    // Simula una llamada a la API y la futura integración de Mercado Pago
     setTimeout(() => {
       setLoading(false);
       onOpenChange(false);
-      toast.info("Integração do Mercado Pago", {
-        description: "A API do MercadoPago será adicionada aqui em breve.",
+      toast.info("Integración de Mercado Pago", {
+        description: "La API de MercadoPago se agregará aquí pronto.",
       });
     }, 1500);
   };
@@ -54,7 +54,7 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
             Finalizar Compra
           </DialogTitle>
           <DialogDescription className="text-sand/70">
-            Preencha seus dados para prosseguir com o pagamento seguro.
+            Complete sus datos para continuar con el pago seguro.
           </DialogDescription>
         </DialogHeader>
 
@@ -82,7 +82,7 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
                   </span>
                 ) : offer.cashPrice ? (
                   <span className="text-xs text-sand/80 bg-sand/10 px-2 py-0.5 rounded-sm">
-                    ou R$ {offer.cashPrice.toFixed(2).replace('.', ',')} à vista
+                    o R$ {offer.cashPrice.toFixed(2).replace('.', ',')} al contado
                   </span>
                 ) : null}
               </div>
@@ -92,26 +92,26 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
 
         <form onSubmit={handleCheckout} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="name" className="text-sand/90">Nome Completo</Label>
+            <Label htmlFor="name" className="text-sand/90">Nombre Completo</Label>
             <Input 
               id="name" 
               required 
-              placeholder="Seu nome" 
+              placeholder="Su nombre" 
               className="bg-black/40 border-sand/20 text-sand placeholder:text-sand/30 focus-visible:ring-gold" 
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email" className="text-sand/90">E-mail</Label>
+            <Label htmlFor="email" className="text-sand/90">Correo electrónico</Label>
             <Input 
               id="email" 
               type="email" 
               required 
-              placeholder="seu@email.com" 
+              placeholder="su@email.com" 
               className="bg-black/40 border-sand/20 text-sand placeholder:text-sand/30 focus-visible:ring-gold" 
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="cpf" className="text-sand/90">CPF</Label>
+            <Label htmlFor="cpf" className="text-sand/90">Documento de Identidad (DNI/CPF)</Label>
             <Input 
               id="cpf" 
               required 
@@ -127,18 +127,18 @@ export function CheckoutModal({ isOpen, onOpenChange, offer }: CheckoutModalProp
               className="w-full bg-[#009EE3] hover:bg-[#008ACA] text-white font-semibold flex items-center justify-center gap-2 h-12 transition-colors rounded-md"
             >
               {loading ? (
-                <span>Processando...</span>
+                <span>Procesando...</span>
               ) : (
                 <>
                   <CreditCard className="w-5 h-5" />
-                  Pagar com Mercado Pago
+                  Pagar con Mercado Pago
                 </>
               )}
             </Button>
             
             <div className="flex items-center justify-center gap-1.5 mt-4 opacity-70">
               <ShieldCheck className="w-4 h-4 text-[#009EE3]" />
-              <span className="text-xs text-sand/80 font-medium">Ambiente 100% seguro pelo Mercado Pago</span>
+              <span className="text-xs text-sand/80 font-medium">Ambiente 100% seguro por Mercado Pago</span>
             </div>
           </div>
         </form>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <img src={logoImg} alt="Dr. Ramon Regis" className="h-16 md:h-20 w-auto object-contain" />
           <p className="font-body text-xs text-sand/40 tracking-wider">
-            © {new Date().getFullYear()} Dr. Ramon Regis — Estética Avançada. Todos os direitos reservados.
+            © {new Date().getFullYear()} Dr. Ramon Regis — Estética Avanzada. Todos los derechos reservados.
           </p>
         </div>
       </div>

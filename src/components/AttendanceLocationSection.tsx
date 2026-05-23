@@ -25,16 +25,16 @@ const AttendanceLocationSection = () => {
             <div className="inline-flex items-center gap-2 mb-6 border border-gold/30 rounded-full px-4 py-1.5 bg-black/20">
               <MapPin className="w-4 h-4 text-gold" />
               <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">
-                Locais de Atendimento
+                Lugares de Atención
               </span>
             </div>
 
             <h2 className="font-heading text-3xl md:text-5xl text-sand mb-4 leading-tight">
-              Atendimentos em <span className="text-gold italic">Goiânia</span>
+              Atención en <span className="text-gold italic">Goiânia</span>
             </h2>
 
             <p className="font-body text-sand/70 max-w-2xl mx-auto text-lg leading-relaxed">
-              Estamos localizados em algumas das regiões mais nobres de Goiânia, com fácil acesso e infraestrutura completa para o seu conforto.
+              Estamos ubicados en algunas de las zonas más exclusivas de Goiânia, con fácil acceso e infraestructura completa para su comodidad.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const AttendanceLocationSection = () => {
             <div className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/40 shadow-2xl hover:shadow-gold/10 transition-all duration-500">
               <img
                 src={theImg}
-                alt="Local de Atendimento - The Prime Tamandaré Office"
+                alt="Lugar de Atención - The Prime Tamandaré Office"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -70,12 +70,12 @@ const AttendanceLocationSection = () => {
                 </p>
 
                 <a
-                  href="https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20The%20Prime%20Tamandar%C3%A9."
+                  href="https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20The%20Prime%20Tamandar%C3%A9."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"
                 >
-                  Agendar Consulta <Calendar className="w-4 h-4" />
+                  Agendar Cita <Calendar className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -87,7 +87,7 @@ const AttendanceLocationSection = () => {
             <div className="relative group rounded-xl overflow-hidden border border-sand/10 hover:border-gold/40 shadow-2xl hover:shadow-gold/10 transition-all duration-500 lg:order-2">
               <img
                 src={localImg}
-                alt="Local de Atendimento - Setor Marista"
+                alt="Lugar de Atención - Setor Marista"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               {/* Overlay gradient */}
@@ -110,7 +110,7 @@ const AttendanceLocationSection = () => {
                 <div className="h-px bg-sand/10 mb-6" />
 
                 <p className="font-body text-sand/70 text-base leading-relaxed mb-8">
-                  Clínica moderna com infraestrutura completa, pensada para proporcionar conforto e exclusividade em cada visita.
+                  Clínica moderna con infraestructura completa, diseñada para brindar comodidad y exclusividad en cada visita.
                 </p>
 
                 <a
@@ -119,7 +119,7 @@ const AttendanceLocationSection = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-transparent border border-gold text-gold hover:bg-gold hover:text-graphite font-body font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full"
                 >
-                  Ver no Google Maps <ExternalLink className="w-4 h-4" />
+                  Ver en Google Maps <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             </div>

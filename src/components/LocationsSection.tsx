@@ -8,7 +8,7 @@ const locations = [
   { state: "São Paulo", cities: "Capital e RMC" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20nas%20cidades%20listadas.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20programar%20una%20valoraci%C3%B3n%20en%20las%20ciudades%20listadas.";
 
 const LocationsSection = () => {
   const section = useScrollReveal();
@@ -19,15 +19,15 @@ const LocationsSection = () => {
         <div ref={section.ref} className={`max-w-5xl mx-auto text-center transform transition-all duration-1000 ${section.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="inline-flex items-center gap-2 mb-6 border border-gold/30 rounded-full px-4 py-1.5 bg-black/20">
             <MapPin className="w-4 h-4 text-gold" />
-            <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">Onde estamos</span>
+            <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">Dónde estamos</span>
           </div>
           
           <h2 className="font-heading text-3xl md:text-5xl text-sand mb-8 leading-tight">
-            Locais de <span className="text-gold italic">Atendimento</span>
+            Lugares de <span className="text-gold italic">Atención</span>
           </h2>
           
           <p className="font-body text-sand/70 mb-16 max-w-2xl mx-auto text-lg leading-relaxed">
-            Levando excelência, naturalidade e resultados premium a diversas regiões. Verifique nossa agenda para a sua cidade.
+            Llevando excelencia, naturalidad y resultados premium a diversas regiones. Consulte nuestra agenda para su ciudad.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -52,7 +52,7 @@ const LocationsSection = () => {
             rel="noopener noreferrer"
             className="cta-shine inline-flex items-center justify-center gap-3 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-6 sm:px-10 py-4 sm:py-5 rounded-sm transition-all duration-300 shadow-lg hover:shadow-gold/20 hover:-translate-y-1 w-full sm:w-auto"
           >
-            Agendamentos clique aqui <ArrowRight className="w-5 h-5" />
+            Haga clic aquí para programar <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </div>

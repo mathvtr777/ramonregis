@@ -21,16 +21,16 @@ const AboutSection = () => {
           </div>
 
           <div className={`reveal-right ${section.isVisible ? "visible" : ""}`}>
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Sobre o Profissional</p>
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Sobre el Profesional</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8">
               Dr. Ramon <span className="text-gold italic">Regis</span>
             </h2>
 
             <div className="space-y-5 font-body text-muted-foreground leading-relaxed">
-              <p>Dr. Ramon Regis é biomédico, especialista em estética avançada e referência em procedimentos de nariz e rejuvenescimento facial, com mais de uma década de experiência transformando a autoestima de seus pacientes.</p>
-              <p>Reconhecido pela excelência técnica e pelo olhar estético refinado, é criador dos métodos exclusivos <strong className="text-foreground">Full Face Plus</strong> e <strong className="text-foreground">Full Shape</strong>, protocolos desenvolvidos para promover resultados naturais, harmônicos e de alto padrão, tanto na face quanto no corpo.</p>
-              <p>Atua como injetor especialista em preenchimento facial, corporal e íntimo, aliando conhecimento científico à prática clínica segura e eficaz. Também possui formação como patologista clínico, o que reforça ainda mais seu compromisso com saúde, segurança e precisão em cada procedimento.</p>
-              <p>Atende em <strong className="text-foreground">Goiânia</strong> e também recebe <strong className="text-foreground">pacientes internacionais</strong>.</p>
+              <p>El Dr. Ramon Regis es biomédico, especialista en estética avanzada y referente en procedimientos de nariz y rejuvenecimiento facial, con más de una década de experiencia transformando la autoestima de sus pacientes.</p>
+              <p>Reconocido por su excelencia técnica y su refinada mirada estética, es creador de los métodos exclusivos <strong className="text-foreground">Full Face Plus</strong> y <strong className="text-foreground">Full Shape</strong>, protocolos desarrollados para promover resultados naturales, armónicos y de alto nivel, tanto en el rostro como en el cuerpo.</p>
+              <p>Se desempeña como especialista en rellenos faciales, corporales e íntimos, combinando el conocimiento científico con una práctica clínica segura y eficaz. También cuenta con formación como patólogo clínico, lo que refuerza aún más su compromiso con la salud, seguridad y precisión en cada procedimiento.</p>
+              <p>Atiende en <strong className="text-foreground">Goiânia</strong> y también recibe a <strong className="text-foreground">pacientes internacionales</strong>.</p>
             </div>
           </div>
         </div>

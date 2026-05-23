@@ -1,17 +1,17 @@
 import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
-const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20con%20el%20Dr.%20Ramon%20Regis.";
 
 const methods = [
   {
     name: "Full Face Plus",
-    tagline: "Protocolo Autoral de Harmonização Facial",
-    description: "Método exclusivo desenvolvido por Dr. Ramon Regis para harmonização facial completa, combinando múltiplas técnicas em um protocolo integrado que entrega resultados naturais, equilibrados e de altíssimo padrão estético.",
+    tagline: "Protocolo de Autor de Armonización Facial",
+    description: "Método exclusivo desarrollado por el Dr. Ramon Regis para la armonización facial completa, combinando múltiples técnicas en un protocolo integrado que ofrece resultados naturales, equilibrados y del más alto nivel estético.",
   },
   {
     name: "Full Shape",
-    tagline: "Protocolo Autoral de Remodelação Corporal",
-    description: "Protocolo autoral voltado para o contorno e a remodelação corporal, unindo tecnologias avançadas e técnicas de preenchimento para esculpir silhuetas com precisão, naturalidade e sofisticação.",
+    tagline: "Protocolo de Autor de Remodelación Corporal",
+    description: "Protocolo de autor enfocado en el contorno y la remodelación corporal, uniendo tecnologías avanzadas y técnicas de relleno para esculpir siluetas con precisión, naturalidad y sofisticación.",
   },
 ];
 
@@ -25,7 +25,7 @@ const MethodsSection = () => {
         <div ref={header.ref} className={`max-w-3xl mx-auto text-center mb-16 lg:mb-20 reveal ${header.isVisible ? "visible" : ""}`}>
           <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Métodos Exclusivos</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-sand leading-tight">
-            Protocolos <span className="text-gold italic">autorais</span>
+            Protocolos <span className="text-gold italic">de autor</span>
           </h2>
         </div>
 
@@ -47,7 +47,7 @@ const MethodsSection = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-body text-xs tracking-wider uppercase text-gold hover:text-sand transition-all duration-300 group-hover:translate-x-1"
               >
-                Saiba mais →
+                Saber más →
               </a>
             </div>
           ))}

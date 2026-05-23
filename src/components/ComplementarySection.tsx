@@ -1,12 +1,12 @@
 import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
-const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20con%20el%20Dr.%20Ramon%20Regis.";
 
 const treatments = [
-  "Preenchimento de Mento", "Bigode Chinês", "Preenchimento Malar", "Preenchimento Marionete",
-  "Reversão de Comissura Labial", "Preenchimento de Têmpora", "Preenchimento de Mandíbula",
-  "Reversão Lipo de Papada", "Preenchimentos Corporais", "Bioestimuladores Corporais",
-  "Procedimentos Íntimos Femininos", "Procedimentos Íntimos Masculinos",
+  "Relleno de Mentón", "Surcos Nasogenianos", "Relleno Malar", "Líneas de Marioneta",
+  "Reversión de Comisura Labial", "Relleno de Sienes", "Relleno de Mandíbula",
+  "Reversión de Lipo de Papada", "Rellenos Corporales", "Bioestimuladores Corporales",
+  "Procedimientos Íntimos Femeninos", "Procedimientos Íntimos Masculinos",
 ];
 
 const ComplementarySection = () => {
@@ -17,12 +17,12 @@ const ComplementarySection = () => {
     <section className="py-24 lg:py-32 bg-sand-dark/50">
       <div className="container mx-auto px-6">
         <div ref={header.ref} className={`max-w-3xl mx-auto text-center mb-16 reveal ${header.isVisible ? "visible" : ""}`}>
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Mais Tratamentos</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Más Tratamientos</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-6">
-            Procedimentos <span className="text-gold italic">complementares</span>
+            Procedimientos <span className="text-gold italic">complementarios</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg">
-            Uma gama completa de tratamentos estéticos para face, corpo e saúde íntima.
+            Una gama completa de tratamientos estéticos para rostro, cuerpo y salud íntima.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const ComplementarySection = () => {
             rel="noopener noreferrer"
             className="cta-shine inline-flex items-center justify-center bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-10 py-4 rounded-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 hover:-translate-y-0.5"
           >
-            Agendar avaliação
+            Programar valoración
           </a>
         </div>
       </div>

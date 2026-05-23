@@ -1,16 +1,16 @@
 import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
-const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20con%20el%20Dr.%20Ramon%20Regis.";
 
 const procedures = [
-  { title: "Botox", description: "Aplicação de toxina botulínica para suavizar rugas e linhas de expressão, prevenindo o envelhecimento e proporcionando aspecto mais leve e descansado." },
-  { title: "Harmonização Facial", description: "Procedimento completo para restaurar volume, melhorar contornos e promover rejuvenescimento global da face, com resultados naturais e harmoniosos." },
-  { title: "Rinomodelação", description: "Procedimento estético minimamente invasivo que harmoniza o contorno do nariz, corrigindo pequenas imperfeições e melhorando o perfil facial sem cirurgia." },
-  { title: "Bioestimuladores", description: "Tratamento que estimula a produção de colágeno, melhorando firmeza, textura e qualidade da pele de forma progressiva e duradoura." },
-  { title: "Preenchimento Labial", description: "Preenchimento para definição, volume e hidratação dos lábios, respeitando naturalidade e proporção facial." },
-  { title: "Preenchimento de Olheira", description: "Tratamento para suavizar sulcos e reduzir o aspecto de cansaço, trazendo mais luminosidade ao olhar." },
-  { title: "Fios de Sustentação", description: "Procedimento minimamente invasivo com efeito lifting imediato, reposicionando tecidos e estimulando colágeno." },
-  { title: "Efeito Nefertiti", description: "Técnica avançada para redefinição do contorno mandibular e pescoço, promovendo lifting natural e melhora da flacidez." },
+  { title: "Botox", description: "Aplicación de toxina botulínica para suavizar arrugas y líneas de expresión, previniendo el envejecimiento y proporcionando un aspecto más ligero y descansado." },
+  { title: "Armonización Facial", description: "Procedimiento completo para restaurar volumen, mejorar contornos y promover el rejuvenecimiento global del rostro, con resultados naturales y armoniosos." },
+  { title: "Rinomodelación", description: "Procedimiento estético mínimamente invasivo que armoniza el contorno de la nariz, corrigiendo pequeñas imperfecciones y mejorando el perfil facial sin cirugía." },
+  { title: "Bioestimuladores", description: "Tratamiento que estimula la producción de colágeno, mejorando la firmeza, textura y calidad de la piel de forma progresiva y duradera." },
+  { title: "Relleno Labial", description: "Relleno para definición, volumen e hidratación de los labios, respetando la naturalidad y proporción facial." },
+  { title: "Relleno de Ojeras", description: "Tratamiento para suavizar surcos y reducir el aspecto de cansancio, aportando más luminosidad a la mirada." },
+  { title: "Hilos Tensores", description: "Procedimiento mínimamente invasivo con efecto lifting inmediato, reposicionando tejidos y estimulando el colágeno." },
+  { title: "Efecto Nefertiti", description: "Técnica avanzada para la redefinición del contorno mandibular y del cuello, promoviendo un lifting natural y mejora de la flacidez." },
 ];
 
 const ProceduresSection = () => {
@@ -21,9 +21,9 @@ const ProceduresSection = () => {
     <section className="py-24 lg:py-32 bg-graphite">
       <div className="container mx-auto px-6">
         <div ref={header.ref} className={`max-w-3xl mx-auto text-center mb-16 lg:mb-20 reveal ${header.isVisible ? "visible" : ""}`}>
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Procedimentos em Destaque</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Procedimientos Destacados</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-sand leading-tight">
-            Tratamentos de <span className="text-gold italic">excelência</span>
+            Tratamientos de <span className="text-gold italic">excelencia</span>
           </h2>
         </div>
 
@@ -43,7 +43,7 @@ const ProceduresSection = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 font-body text-xs tracking-wider uppercase text-gold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300"
               >
-                Agendar horário →
+                Programar cita →
               </a>
             </div>
           ))}
@@ -56,7 +56,7 @@ const ProceduresSection = () => {
             rel="noopener noreferrer"
             className="cta-shine inline-flex items-center justify-center bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-6 sm:px-10 py-4 rounded-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 hover:-translate-y-0.5 w-full sm:w-auto"
           >
-            Agendar horário
+            Programar cita
           </a>
         </div>
       </div>

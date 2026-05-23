@@ -2,13 +2,13 @@ import { Shield, Award, Target, Star, Users, Globe, Sparkles } from "lucide-reac
 import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const differentials = [
-  { icon: Award, title: "+10 anos de experiência", description: "Mais de uma década dedicada à estética avançada com excelência" },
-  { icon: Target, title: "+5 mil rinomodelações", description: "Referência absoluta em procedimentos de nariz" },
-  { icon: Shield, title: "Zero intercorrências", description: "Histórico impecável de segurança em rinomodelação" },
-  { icon: Sparkles, title: "Protocolos exclusivos", description: "Métodos autorais Full Face Plus e Full Shape" },
-  { icon: Users, title: "Atendimento personalizado", description: "Cada paciente recebe um plano sob medida" },
-  { icon: Star, title: "Resultados naturais", description: "Foco em harmonia, elegância e sofisticação" },
-  { icon: Globe, title: "Atuação internacional", description: "Atendimento em Goiânia e pacientes do exterior" },
+  { icon: Award, title: "+10 años de experiencia", description: "Más de una década dedicada a la estética avanzada con excelencia" },
+  { icon: Target, title: "+5 mil rinomodelaciones", description: "Referencia absoluta en procedimientos de nariz" },
+  { icon: Shield, title: "Cero complicaciones", description: "Historial impecable de seguridad en rinomodelación" },
+  { icon: Sparkles, title: "Protocolos exclusivos", description: "Métodos de autor Full Face Plus y Full Shape" },
+  { icon: Users, title: "Atención personalizada", description: "Cada paciente recibe un plan a la medida" },
+  { icon: Star, title: "Resultados naturales", description: "Enfoque en la armonía, elegancia y sofisticación" },
+  { icon: Globe, title: "Atención internacional", description: "Atención en Goiânia y pacientes del exterior" },
 ];
 
 const DifferentialsSection = () => {
@@ -19,9 +19,9 @@ const DifferentialsSection = () => {
     <section className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div ref={header.ref} className={`max-w-3xl mx-auto text-center mb-16 lg:mb-20 reveal ${header.isVisible ? "visible" : ""}`}>
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Diferenciais</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Diferenciales</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-            Por que escolher <span className="text-gold italic">Dr. Ramon Regis</span>
+            Por qué elegir al <span className="text-gold italic">Dr. Ramon Regis</span>
           </h2>
         </div>
 

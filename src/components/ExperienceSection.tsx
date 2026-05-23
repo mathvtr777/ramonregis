@@ -9,17 +9,17 @@ const ExperienceSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div ref={header.ref} className={`reveal ${header.isVisible ? "visible" : ""}`}>
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Experiência do Paciente</p>
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Experiencia del Paciente</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-sand leading-tight mb-8">
-              Sua estética merece um olhar <span className="text-gold italic">único</span>
+              Su estética merece una mirada <span className="text-gold italic">única</span>
             </h2>
           </div>
 
           <div ref={steps.ref} className="grid md:grid-cols-3 gap-8 mt-16 stagger-children">
             {[
-              { step: "01", title: "Avaliação Individualizada", text: "Cada paciente é único. A consulta começa com uma análise detalhada das proporções, necessidades e expectativas." },
-              { step: "02", title: "Protocolo Sob Medida", text: "Com base na avaliação, é desenvolvido um plano de tratamento personalizado, priorizando naturalidade e harmonia." },
-              { step: "03", title: "Resultados com Excelência", text: "A combinação de técnica avançada, materiais de primeira linha e olhar estético refinado garante resultados sofisticados." },
+              { step: "01", title: "Valoración Individualizada", text: "Cada paciente es único. La consulta comienza con un análisis detallado de las proporciones, necesidades y expectativas." },
+              { step: "02", title: "Protocolo a la Medida", text: "Con base en la valoración, se desarrolla un plan de tratamiento personalizado, priorizando la naturalidad y la armonía." },
+              { step: "03", title: "Resultados con Excelencia", text: "La combinación de técnica avanzada, materiales de primera línea y una refinada mirada estética garantiza resultados sofisticados." },
             ].map((item) => (
               <div key={item.step} className={`text-center px-4 reveal ${steps.isVisible ? "visible" : ""}`}>
                 <span className="font-heading text-6xl text-gold/20 block mb-4 animate-float" style={{ animationDelay: `${parseInt(item.step) * 0.3}s` }}>{item.step}</span>

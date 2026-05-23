@@ -4,12 +4,12 @@ import {
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const faqs = [
-  { question: "A rinomodelação substitui cirurgia?", answer: "A rinomodelação é um procedimento minimamente invasivo indicado para correções estéticas sutis no contorno do nariz. Para casos que demandam alterações estruturais significativas, a rinoplastia cirúrgica pode ser mais indicada. Na avaliação, Dr. Ramon Regis orienta sobre a melhor abordagem para cada caso." },
-  { question: "O resultado fica natural?", answer: "Sim. A naturalidade é um pilar fundamental do trabalho de Dr. Ramon Regis. Todos os procedimentos são realizados com técnica refinada e olhar estético apurado, buscando sempre resultados harmônicos que respeitam as proporções e a individualidade de cada paciente." },
-  { question: "Quanto tempo dura cada procedimento?", answer: "A duração varia conforme o tipo de procedimento. A maioria das aplicações dura entre 30 minutos e 1 hora. Detalhes específicos são discutidos durante a avaliação personalizada." },
-  { question: "Como saber qual procedimento é ideal para mim?", answer: "Na avaliação personalizada, Dr. Ramon Regis analisa suas proporções faciais, necessidades, expectativas e histórico clínico para indicar o plano de tratamento mais adequado para você." },
-  { question: "O atendimento é personalizado?", answer: "Absolutamente. Cada paciente recebe uma avaliação individualizada e um protocolo desenvolvido sob medida. Não existem tratamentos padronizados — cada plano é único." },
-  { question: "Vocês atendem pacientes de fora de Goiânia?", answer: "Sim. Dr. Ramon Regis recebe pacientes de diversas regiões do Brasil e também pacientes internacionais. A equipe oferece suporte na organização logística do atendimento." },
+  { question: "¿La rinomodelación reemplaza a la cirugía?", answer: "La rinomodelación es un procedimiento mínimamente invasivo indicado para correcciones estéticas sutiles en el contorno de la nariz. Para casos que requieren cambios estructurales significativos, la rinoplastia quirúrgica puede ser más adecuada. En la valoración, el Dr. Ramon Regis orienta sobre el mejor enfoque para cada caso." },
+  { question: "¿El resultado se ve natural?", answer: "Sí. La naturalidad es un pilar fundamental del trabajo del Dr. Ramon Regis. Todos los procedimientos se realizan con una técnica refinada y una mirada estética precisa, buscando siempre resultados armónicos que respeten las proporciones y la individualidad de cada paciente." },
+  { question: "¿Cuánto tiempo dura cada procedimiento?", answer: "La duración varía según el tipo de procedimiento. La mayoría de las aplicaciones duran entre 30 minutos y 1 hora. Los detalles específicos se discuten durante la valoración personalizada." },
+  { question: "¿Cómo saber qué procedimiento es el ideal para mí?", answer: "En la valoración personalizada, el Dr. Ramon Regis analiza sus proporciones faciales, necesidades, expectativas e historial clínico para indicarle el plan de tratamiento más adecuado para usted." },
+  { question: "¿La atención es personalizada?", answer: "Absolutamente. Cada paciente recibe una valoración individualizada y un protocolo desarrollado a la medida. No existen tratamientos estandarizados; cada plan es único." },
+  { question: "¿Atienden a pacientes de fuera de Goiânia?", answer: "Sí. El Dr. Ramon Regis recibe a pacientes de diversas regiones de Brasil y también a pacientes internacionales. El equipo ofrece soporte en la organización logística de la atención." },
 ];
 
 const FAQSection = () => {
@@ -21,9 +21,9 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div ref={header.ref} className={`text-center mb-16 reveal ${header.isVisible ? "visible" : ""}`}>
-            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Dúvidas Frequentes</p>
+            <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Preguntas Frecuentes</p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
-              Perguntas <span className="text-gold italic">frequentes</span>
+              Preguntas <span className="text-gold italic">frecuentes</span>
             </h2>
           </div>
 

@@ -1,12 +1,12 @@
 
 const stats = [
-  { value: "+10", label: "anos de experiência" },
-  { value: "+5.000", label: "rinomodelações realizadas" },
-  { value: "Zero", label: "intercorrências em rinomodelação" },
-  { value: "Global", label: "atendimento internacional" },
+  { value: "+10", label: "años de experiencia" },
+  { value: "+5.000", label: "rinomodelaciones realizadas" },
+  { value: "Cero", label: "complicaciones en rinomodelación" },
+  { value: "Global", label: "atención internacional" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/5584998968160?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20Dr.%20Ramon%20Regis.";
+const WHATSAPP_URL = "https://wa.me/5584998968160?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n%20con%20el%20Dr.%20Ramon%20Regis.";
 
 const HeroSection = () => {
   return (
@@ -31,17 +31,17 @@ const HeroSection = () => {
           <div className="animate-fade-up inline-flex items-center gap-2 mb-8 border border-gold/30 rounded-full px-5 py-2">
             <div className="w-2 h-2 rounded-full bg-gold animate-pulse-glow" />
             <span className="text-sm font-body tracking-widest uppercase text-sand/80">
-              Estética Avançada Premium
+              Estética Avanzada Premium
             </span>
           </div>
 
           <h1 className="animate-fade-up animation-delay-200 font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.15] sm:leading-[1.1] tracking-tight text-sand mb-6">
-            Eleve sua estética a um novo nível com{" "}
-            <span className="text-gold italic">naturalidade</span>, precisão e excelência clínica.
+            Eleve su estética a un nuevo nivel con{" "}
+            <span className="text-gold italic">naturalidad</span>, precisión y excelencia clínica.
           </h1>
 
           <p className="animate-fade-up animation-delay-400 font-body text-lg md:text-xl text-sand/70 leading-relaxed mb-10 max-w-2xl">
-            Mais de 10 anos de experiência e reconhecimento em estética avançada, com destaque em rinomodelação, harmonização facial e rejuvenescimento de alto padrão.
+            Más de 10 años de experiencia y reconocimiento en estética avanzada, con énfasis en rinomodelación, armonización facial y rejuvenecimiento de alto nivel.
           </p>
 
           <div className="animate-fade-up animation-delay-600 flex flex-col sm:flex-row gap-4 mb-16 w-full">
@@ -51,7 +51,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="cta-shine w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-graphite font-body font-semibold text-sm tracking-wider uppercase px-6 sm:px-8 py-4 rounded-sm transition-all duration-300 hover:shadow-lg hover:shadow-gold/20 hover:-translate-y-0.5"
             >
-              Agendar avaliação personalizada
+              Agendar valoración personalizada
             </a>
             <a
               href={WHATSAPP_URL}
@@ -59,7 +59,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-sand/30 hover:border-gold text-sand font-body font-medium text-sm tracking-wider uppercase px-6 sm:px-8 py-4 rounded-sm transition-all duration-300 hover:-translate-y-0.5"
             >
-              Falar no WhatsApp
+              Contactar por WhatsApp
             </a>
           </div>
 

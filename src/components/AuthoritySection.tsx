@@ -2,20 +2,20 @@ import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 const pillars = [
   {
-    title: "Referência em Rinomodelação",
-    description: "Mais de 5 mil procedimentos realizados com zero intercorrências, unindo técnica avançada e olhar estético refinado.",
+    title: "Referencia en Rinomodelación",
+    description: "Más de 5 mil procedimientos realizados con cero complicaciones, uniendo técnica avanzada y mirada estética refinada.",
   },
   {
-    title: "Harmonização & Rejuvenescimento",
-    description: "Protocolos personalizados que restauram volume, contornos e jovialidade com resultados naturais e elegantes.",
+    title: "Armonización & Rejuvenecimiento",
+    description: "Protocolos personalizados que restauran volumen, contornos y juventud con resultados naturales y elegantes.",
   },
   {
     title: "Protocolos Exclusivos",
-    description: "Criador dos métodos Full Face Plus e Full Shape, desenvolvidos para resultados diferenciados e de alto padrão.",
+    description: "Creador de los métodos Full Face Plus y Full Shape, desarrollados para resultados diferenciados y de alto nivel.",
   },
   {
-    title: "Segurança & Naturalidade",
-    description: "Compromisso inabalável com a saúde do paciente, aliando ciência, precisão e resultados que respeitam a individualidade.",
+    title: "Seguridad & Naturalidad",
+    description: "Compromiso inquebrantable con la salud del paciente, combinando ciencia, precisión y resultados que respetan la individualidad.",
   },
 ];
 
@@ -27,13 +27,13 @@ const AuthoritySection = () => {
     <section className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div ref={header.ref} className={`max-w-3xl mx-auto text-center mb-16 lg:mb-20 reveal ${header.isVisible ? "visible" : ""}`}>
-          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Proposta de Valor</p>
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-4">Propuesta de Valor</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-6">
-            Excelência que se traduz em{" "}
-            <span className="text-gold italic">confiança</span>
+            Excelencia que se traduce en{" "}
+            <span className="text-gold italic">confianza</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg leading-relaxed">
-            Uma abordagem que une ciência, técnica e sensibilidade estética para resultados que transformam com segurança e sofisticação.
+            Un enfoque que une ciencia, técnica y sensibilidad estética para resultados que transforman con seguridad y sofisticación.
           </p>
         </div>
 
