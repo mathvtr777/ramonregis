@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode, useCallback, useMemo } from 'react';
 import pt from '../locales/pt.json';
 import es from '../locales/es.json';
 import enGB from '../locales/en-GB.json';
@@ -8,7 +8,7 @@ import fr from '../locales/fr.json';
 type Language = 'pt' | 'es' | 'en-GB' | 'en-US' | 'fr';
 
 interface Translations {
-  [key: string]: string | Translations;
+  [key: string]: any;
 }
 
 const translations: Record<Language, Translations> = {
@@ -38,9 +38,14 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     document.documentElement.lang = language;
   }, [language]);
 
-  const t = (key: string): string => {
+  const t = useCallback((key: string): string => {
     const keys = key.split('.');
     let current: any = translations[language];
+    
+    // Fallback for some bundlers that nest json under .default
+    if (current && current.default) {
+      current = current.default;
+    }
     
     for (const k of keys) {
       if (current === undefined || current === null) return key;
@@ -48,10 +53,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
     
     return current !== undefined ? current : key;
-  };
+  }, [language]);
+
+  const value = useMemo(() => ({ language, setLanguage, t }), [language, t]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
