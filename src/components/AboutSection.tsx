@@ -27,7 +27,7 @@ const AboutSection = () => {
             </h2>
 
             <div className="space-y-5 font-body text-muted-foreground leading-relaxed">
-              <p>El Dr. Ramon Regis es biomédico, especialista en estética avanzada y referente en procedimientos de nariz y rejuvenecimiento facial, con más de una década de experiencia transformando la autoestima de sus pacientes.</p>
+              <p>El Dr. Ramon Regis es especialista en estética avanzada, con énfasis especial en <strong className="text-foreground">rejuvenecimiento facial</strong>, y referente en procedimientos de nariz, con más de una década de experiencia transformando la autoestima de sus pacientes.</p>
               <p>Reconocido por su excelencia técnica y su refinada mirada estética, es creador de los métodos exclusivos <strong className="text-foreground">Full Face Plus</strong> y <strong className="text-foreground">Full Shape</strong>, protocolos desarrollados para promover resultados naturales, armónicos y de alto nivel, tanto en el rostro como en el cuerpo.</p>
               <p>Se desempeña como especialista en rellenos faciales, corporales e íntimos, combinando el conocimiento científico con una práctica clínica segura y eficaz. También cuenta con formación como patólogo clínico, lo que refuerza aún más su compromiso con la salud, seguridad y precisión en cada procedimiento.</p>
               <p>Atiende en <strong className="text-foreground">Goiânia</strong> y también recibe a <strong className="text-foreground">pacientes internacionales</strong>.</p>
