@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -53,6 +53,7 @@ const Header = () => {
           >
             {t('header.agendar')}
           </a>
+          <span className="text-white text-xs">Lang: {language}</span>
           <LanguageSwitcher />
         </nav>
 
