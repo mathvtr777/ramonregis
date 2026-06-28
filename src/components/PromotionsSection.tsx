@@ -1,5 +1,4 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Sparkles } from "lucide-react";
 
 const PromotionsSection = () => {
   const section = useScrollReveal();
@@ -7,16 +6,7 @@ const PromotionsSection = () => {
   return (
     <section className="py-20 lg:py-28 bg-graphite relative overflow-hidden border-y border-sand/10">
       <div className="container mx-auto px-6 relative z-10">
-        <div ref={section.ref} className={`max-w-6xl mx-auto text-center transform transition-all duration-1000 ${section.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <div className="inline-flex items-center gap-2 mb-6 border border-gold/30 rounded-full px-4 py-1.5 bg-black/20">
-            <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-xs font-body tracking-[0.2em] uppercase text-sand/80">Oportunidade Exclusiva</span>
-          </div>
-
-          <h2 className="font-heading text-3xl md:text-5xl text-sand mb-4 leading-tight">
-            Promoção <span className="text-gold italic">Junina</span>
-          </h2>
-        </div>
+        <div ref={section.ref} className={`max-w-6xl mx-auto text-center transform transition-all duration-1000 ${section.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`} />
       </div>
 
       {/* Decorative gradient */}
